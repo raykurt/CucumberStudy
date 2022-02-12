@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 public class Driver {
 
-    //create a driver instance
+//  create a driver instance
     private static WebDriver driver;
     private static int timeout = 5;
 
@@ -29,9 +29,9 @@ public class Driver {
         //we don't want to create another object. Singleton pattern
     }
 
-    //to initialize the driver we create a static method
+//      to initialize the driver we create a static method
     public static WebDriver getDriver() {
-        //create the driver if and only if it is null
+//      create the driver if and only if it is null
         if (driver == null) {
             String browser = ConfigurationReader.getProperty("browser");
             if ("chrome".equals(browser)) {
