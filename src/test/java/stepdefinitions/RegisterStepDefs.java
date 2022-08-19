@@ -35,7 +35,7 @@ public class RegisterStepDefs {
     }
     @Then("user see pop up {string}")
     public void user_see_pop_up(String successMessage) throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(2500);
         Assert.assertTrue(registerPage.successMessage.isDisplayed());
     }
     @And("user sends address as {string}")
