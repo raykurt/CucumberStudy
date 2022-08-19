@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="26.413">
-    <testcase classname="Google_Search_Functionality" name="TC02_teapot_search" time="14.755">
-        <system-out><![CDATA[Given user is on the google page............................................passed
-When user search for Tea Pot on google......................................passed
-Then verify the result has Tea Pot related results..........................passed
-Then close the application..................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Google_Search_Functionality" name="TC03_flower_search" time="11.017">
-        <system-out><![CDATA[Given user is on the google page............................................passed
-When user search for flower on google.......................................passed
-Then verify the result has flower related results...........................passed
-Then close the application..................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.58">
+    <testcase classname="database features" name="TC04_read_user_information_email" time="3.141">
+        <system-out><![CDATA[Given user connects to the database.........................................passed
+And user gets the "*" from "jhi_user" table.................................passed
+And user reads all of the "email" column data...............................passed
+Then close the database connection..........................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

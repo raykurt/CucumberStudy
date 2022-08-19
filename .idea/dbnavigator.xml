@@ -18,6 +18,7 @@
       <destination value="FILE" />
       <format value="EXCEL" />
       <charset value="windows-1254" />
+      <charset value="windows-1254" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -27,20 +28,15 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="cbe4aa58-a310-46ee-9b54-00ae9e461f1f">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from tpaccount_registration]]></console>
+    <connection id="1054d1e2-e5c9-447a-8353-78c4b573a6fb">
+      <console name="Connection" type="STANDARD" schema="" session="Main"><![CDATA[select * from parents2]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="cbe4aa58-a310-46ee-9b54-00ae9e461f1f" />
-  </component>
-  <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="cbe4aa58-a310-46ee-9b54-00ae9e461f1f" dataset="public.tp_account" active-filter-id="" />
-    <filter-actions connection-id="cbe4aa58-a310-46ee-9b54-00ae9e461f1f" dataset="public.databasechangeloglock" active-filter-id="" />
-    <filter-actions connection-id="cbe4aa58-a310-46ee-9b54-00ae9e461f1f" dataset="public.tp_customer" active-filter-id="" />
+    <connection id="1054d1e2-e5c9-447a-8353-78c4b573a6fb" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -71,7 +67,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="cbe4aa58-a310-46ee-9b54-00ae9e461f1f" active="true" signed="false">
+      <connection id="1054d1e2-e5c9-447a-8353-78c4b573a6fb" active="true" signed="true">
         <database>
           <name value="Connection" />
           <description value="" />
@@ -125,7 +121,7 @@
           <alternative-statement-delimiter value="" />
         </details>
         <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
-          <object-type-filter use-master-settings="true">
+          <object-type-filter>
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
             <object-type name="ROLE" enabled="true" />
@@ -196,6 +192,7 @@
         <object-type name="FUNCTİON" sorting-type="NAME" />
         <object-type name="PROCEDURE" sorting-type="NAME" />
         <object-type name="ARGUMENT" sorting-type="POSITION" />
+        <object-type name="TYPE ATTRİBUTE" sorting-type="POSITION" />
       </sorting>
       <default-editors>
         <object-type name="VİEW" editor-type="SELECTION" />
@@ -242,11 +239,11 @@
         <nulls-first value="true" />
         <max-sorting-columns value="4" />
       </sorting>
-      <tracking-columns>
-        <columnNames value="" />
+      <audit-columns>
+        <column-names value="" />
         <visible value="true" />
         <editable value="false" />
-      </tracking-columns>
+      </audit-columns>
     </dataset-grid-settings>
     <dataset-editor-settings>
       <text-editor-popup>

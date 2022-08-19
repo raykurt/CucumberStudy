@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@db_account_registration",
+        tags = "@db_user_email",
         dryRun = false
 )
 
