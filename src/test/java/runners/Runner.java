@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features",
         glue = {"stepdefinitions"}, // run stepdefinitions and Hooks folder
-        tags = "@wip",
+        tags = "@money_transfer",
         dryRun = false
 
 )

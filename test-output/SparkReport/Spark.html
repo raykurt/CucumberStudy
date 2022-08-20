@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 7, 2022 10:35:02 PM</span></a>
+<a href="#"><span class="badge badge-primary">Aug 20, 2022 09:00:32 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 7, 2022 10:35:02 PM</h3>
+<h3>Aug 20, 2022 09:00:32 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 7, 2022 10:35:31 PM</h3>
+<h3>Aug 20, 2022 09:01:45 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>8</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>10</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Google_Search_Functionality":25.726
+"money transfer feature":70.836
 };
 </script>
 <div class="row">
@@ -172,32 +172,16 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@teapot_search</td>
-<td>1</td>
+<td>@smoke</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@wip</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@google_search</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@flower_search</td>
-<td>1</td>
+<td>@money_transfer</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -237,7 +221,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 8,
+passGrandChild: 10,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -262,7 +246,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@teapot_search</a><a class="dropdown-item" href="#">@wip</a><a class="dropdown-item" href="#">@google_search</a><a class="dropdown-item" href="#">@flower_search</a>
+<a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@money_transfer</a>
 </ul>
 </li>
 </ul>
@@ -273,9 +257,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Google_Search_Functionality</p>
+            <p class="name">money transfer feature</p>
             <p class="text-sm">
-              <span>10:35:05 PM</span> / <span>00:00:25:726</span>
+              <span>9:00:34 PM</span> / <span>00:01:10:836</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -283,10 +267,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Google_Search_Functionality</h5>
-<span class='badge badge-success'>08.07.2022 10:35:05 PM</span>
-<span class='badge badge-danger'>08.07.2022 10:35:30 PM</span>
-<span class='badge badge-default'>00:00:25:726</span>
+<h5 class="test-status text-pass">money transfer feature</h5>
+<span class='badge badge-success'>08.20.2022 9:00:34 PM</span>
+<span class='badge badge-danger'>08.20.2022 9:01:45 PM</span>
+<span class='badge badge-default'>00:01:10:836</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -298,54 +282,71 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC02_teapot_search</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>login_with_customer_credentials</div>
       </div>
     </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.user_is_on_the_google_page()">
-                <span>Given user is on the google page</span>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>login_with_customer_credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user is on the login page</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.user_search_for_tea_pot_on_google()">
-                <span>When user search for Tea Pot on google</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given user has log in with "shaylee.lindgren" and "mVSk$eq1YoZwq"</span>
       <div>
       </div>
+                  </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.verify_the_result_has_tea_pot_related_results()">
-                <span>Then verify the result has Tea Pot related results</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.close_the_application()">
-                <span>Then close the application</span>
-      <div>
-      </div>
-              </div>
-          </div>
+            </div>
         </div>
   </div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>TC03_flower_search</div>
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>user_should_make_money_transfer</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.user_is_on_the_google_page()">
-                <span>Given user is on the google page</span>
+              <div class="step pass-bg" title="stepdefinitions.RegistrationStepDefs.user_clicks_on_my_operations()">
+                <span>Given user clicks on my operations</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.user_search_for_flower_on_google()">
-                <span>When user search for flower on google</span>
+              <div class="step pass-bg" title="stepdefinitions.RegistrationStepDefs.user_clicks_on_transfer_money()">
+                <span>And user clicks on transfer money</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.verify_the_result_has_flower_related_results()">
-                <span>Then verify the result has flower related results</span>
+              <div class="step pass-bg" title="stepdefinitions.RegistrationStepDefs.user_select_the_current_account_to_transfer_money_from()">
+                <span>When user select the current account to transfer money from</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.RegistrationStepDefs.user_select_the_other_account_to_transfer_money_to()">
+                <span>And user select the other account to transfer money to</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.RegistrationStepDefs.user_provides_the_balance(java.lang.String)">
+                <span>When user provides the balance "1"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.RegistrationStepDefs.user_types_the_description()">
+                <span>And user types the description</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.RegistrationStepDefs.user_makes_the_money_transfer_and_verify_success_message()">
+                <span>Then user makes the money transfer and verify success message</span>
       <div>
       </div>
               </div>
@@ -373,22 +374,22 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>3</span>
 </span>
-<p class="name">@teapot_search</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">@smoke</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@teapot_search</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -401,11 +402,31 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:35:05 PM</td>
+<td>21:00:34 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC02_teapot_search</a>
+<a href="#" class="linked" test-id='1' id='2'>login_with_customer_credentials</a>
 <div class="">
-<span class="badge badge-default">Google_Search_Functionality.TC02_teapot_search</span>
+<span class="badge badge-default">money transfer feature.login_with_customer_credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:00:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>login_with_customer_credentials</a>
+<div class="">
+<span class="badge badge-default">money transfer feature.login_with_customer_credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:01:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>user_should_make_money_transfer</a>
+<div class="">
+<span class="badge badge-default">money transfer feature.user_should_make_money_transfer</span>
 </div>
 </td>
 </tr>
@@ -416,15 +437,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log pass-bg'>3</span>
 </span>
-<p class="name">@wip</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">@money_transfer</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@wip</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<h4>@money_transfer</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -437,103 +458,31 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:35:05 PM</td>
+<td>21:00:34 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC02_teapot_search</a>
+<a href="#" class="linked" test-id='1' id='2'>login_with_customer_credentials</a>
 <div class="">
-<span class="badge badge-default">Google_Search_Functionality.TC02_teapot_search</span>
+<span class="badge badge-default">money transfer feature.login_with_customer_credentials</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:35:19 PM</td>
+<td>21:00:34 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='7'>TC03_flower_search</a>
+<a href="#" class="linked" test-id='1' id='3'>login_with_customer_credentials</a>
 <div class="">
-<span class="badge badge-default">Google_Search_Functionality.TC03_flower_search</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@google_search</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@google_search</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>22:35:05 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>TC02_teapot_search</a>
-<div class="">
-<span class="badge badge-default">Google_Search_Functionality.TC02_teapot_search</span>
+<span class="badge badge-default">money transfer feature.login_with_customer_credentials</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:35:19 PM</td>
+<td>21:01:38 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='7'>TC03_flower_search</a>
+<a href="#" class="linked" test-id='1' id='6'>user_should_make_money_transfer</a>
 <div class="">
-<span class="badge badge-default">Google_Search_Functionality.TC03_flower_search</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@flower_search</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@flower_search</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>22:35:19 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='7'>TC03_flower_search</a>
-<div class="">
-<span class="badge badge-default">Google_Search_Functionality.TC03_flower_search</span>
+<span class="badge badge-default">money transfer feature.user_should_make_money_transfer</span>
 </div>
 </td>
 </tr>
