@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@chrome_scenario",
+        tags = "@money_transfer",
         dryRun = false
 )
 public class GridRunner {
