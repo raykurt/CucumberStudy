@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.58">
-    <testcase classname="database features" name="TC04_read_user_information_email" time="3.141">
-        <system-out><![CDATA[Given user connects to the database.........................................passed
-And user gets the "*" from "jhi_user" table.................................passed
-And user reads all of the "email" column data...............................passed
-Then close the database connection..........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="71.555">
+    <testcase classname="money transfer feature" name="login_with_customer_credentials" time="64.958">
+        <system-out><![CDATA[Given user is on the login page.............................................passed
+Given user has log in with "shaylee.lindgren" and "mVSk$eq1YoZwq"...........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="money transfer feature" name="user_should_make_money_transfer" time="5.803">
+        <system-out><![CDATA[Given user clicks on my operations..........................................passed
+And user clicks on transfer money...........................................passed
+When user select the current account to transfer money from.................passed
+And user select the other account to transfer money to......................passed
+When user provides the balance "1"..........................................passed
+And user types the description..............................................passed
+Then user makes the money transfer and verify success message...............passed
+Then close the application..................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
